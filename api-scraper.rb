@@ -1,4 +1,5 @@
 require 'open-uri'
+require 'json'
 
 # Set API token and URL
 auth_token = "193b7bfed7eb034d47162e8124ed4e19"
@@ -15,7 +16,7 @@ uri = URI.parse(polling_url)
 uri.query = URI.encode_www_form(params)
 
 # Submit request
-result = open(uri).read
+result = JSON.parse(open(uri).read)
 
 # Display results to screen
-puts result
+puts JSON.pretty_generate result
