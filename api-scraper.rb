@@ -8,7 +8,12 @@ polling_url = "http://polling.3taps.com/poll"
 # Specify request paramaters
 params = {
 	auth_token: auth_token,
-	anchor: 2312360484
+	anchor: 2312360484,
+	source: "CRAIG",
+	category_group: "RRRR",
+	category: "RHFR",
+	'location.city' => "USA-NYM-BRL",
+	retvals: "location,external_url,heading,body,timestamp,price,images,annotations"
 }
 
 # Prepare API request
