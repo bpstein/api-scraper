@@ -7,7 +7,8 @@ polling_url = "http://polling.3taps.com/poll"
 # Specify request paramaters
 params = {
 	auth_token: auth_token,
-	anchor: 2312360484,
+	anchor: 2312360484
+}
 
 # Prepare API request
 uri = URI.parse(polling_url)
@@ -18,4 +19,3 @@ result = open(uri).read
 
 # Display results to screen
 puts result
-}
